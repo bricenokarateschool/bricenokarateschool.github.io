@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            cursor: none; /* Hide the default cursor */
+            background: linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000),
+                        linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000);
+            background-size: 40px 40px;
+        }
+
+        .coming-soon {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            font-size: 80px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: transform 0.3s;
+            background-color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .coming-soon:hover {
+            transform: scale(1.1);
+            color: #000;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon">COMING SOON</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const comingSoon = document.querySelector(".coming-soon");
+
+            function toggleAnimation() {
+                comingSoon.classList.toggle("animated");
+            }
+
+            comingSoon.addEventListener("click", toggleAnimation);
+        });
+    </script>
+</body>
+</html>
