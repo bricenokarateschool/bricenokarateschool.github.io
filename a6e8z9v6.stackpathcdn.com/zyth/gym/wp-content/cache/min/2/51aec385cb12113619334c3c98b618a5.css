@@ -27663,7 +27663,7 @@ body:not(.lg-from-hash)
 }
 .gdlr-core-page-builder-body p {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: inherit;
   line-height: inherit;
 }
@@ -54509,7 +54509,7 @@ body .gdlr-core-accordion-style-box-icon .gdlr-core-accordion-item-icon {
 }
 .gdlr-core-input-wrap input[type="submit"].gdlr-core-large,
 .gdlr-core-input-wrap input[type="reset"].gdlr-core-large {
-  padding: 28px 198px;
+  padding: 28px 85px;
   font-size: 17px;
   text-transform: none;
   font-style: italic;
@@ -54814,7 +54814,7 @@ body.zyth-boxed .zyth-fixed-footer .zyth-copyright-wrapper {
   margin-left: 35px;
 }
 .zyth-side-content-menu-button {
-  margin-left: 35px;
+  margin-left: 85px;
 }
 .zyth-header-side-content,
 #zyth-side-content-menu {
