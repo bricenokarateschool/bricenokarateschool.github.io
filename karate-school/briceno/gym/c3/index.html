@@ -92,17 +92,20 @@
 
     <a href="../index.html" class="back">HOME</a>
 
+    <div class="trail"></div>
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const comingSoon = document.querySelector(".coming-soon");
-            const back = document.querySelector(".back");
+            const trail = document.querySelector(".trail");
 
-            function toggleAnimation() {
-                this.classList.toggle("animated");
+            function moveTrail(event) {
+                const x = event.clientX;
+                const y = event.clientY;
+                trail.style.left = `${x}px`;
+                trail.style.top = `${y}px`;
             }
 
-            comingSoon.addEventListener("click", toggleAnimation);
-            back.addEventListener("click", toggleAnimation);
+            document.addEventListener("mousemove", moveTrail);
         });
     </script>
 </body>
